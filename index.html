@@ -25,19 +25,17 @@
         <h2>Home</h2>
     </div>
     <div data-role="content" role="main" class="dcontent">
-        <h3>Welcome to Currency Converter</h3>
+        <h1>Welcome to Currency Converter</h1>
         <table id="menu">
-            <tr>
-                <td width="50%"><a href="#USDolarpage" data-transition="slideup">US Dolar</a></td>
-                <td width="50%"><a href="#Britishpspage" data-transition="slideup">BRITISH POUND STERLING</a></td>
-            </tr>
-            <tr>
-                <td width="50%"><a href="#SaudiRiyalpage" data-transition="slideup">SAUDI RIYAL</a></td>
-                <td width="50%"><a href="#JapaneseYenpage" data-transition="slideup">JAPANESE YEN</a></td>
-            </tr>
+            <ul data-role="listview">
+                <li><a href="#USDolarpage"  data-transition="slideup">US Dolar</a></li>
+                <li><a href="#Britishpspage" data-transition="slideup">BRITISH POUND STERLING</a></li>
+                <li><a href="#SaudiRiyalpage" data-transition="slideup">SAUDI RIYAL</a></li>
+                <li><a href="#JapaneseYenpage" data-transition="slideup">JAPANESE YEN</a></li>
+            </ul>
         </table>
     </div>
-    <div class="footerbar" data-theme="b">
+    <div data-role="footer" class="footerbar" data-theme="b">
         <h3>DFT 3013 Web Design Technologies</h3>
     </div>
 </div>
@@ -55,14 +53,13 @@
     </div>
     <div data-role="content" role="main" class="dcontent">
         <h3>US DOLLAR CONVERTER</h3>
-        <br>
         <form name="Dolar">
             <table>
                 <tr>
                     <td colspan="2"><h4>MALAYSIA RINGGIT</h4></td>
                 </tr>
                 <tr>
-                    <td width="30px"><p>RM</p></td>
+                    <td width="70px"><h3>RM</h3></td>
                     <td><input type="text" name="myr" id="myr1" data-theme="b"></td>
                 </tr>
                 <tr>
@@ -72,7 +69,7 @@
                     <td colspan="2"><h4>US DOLLAR</h4></td>
                 </tr>
                 <tr>
-                    <td width="30px"><p>USD</p></td>
+                    <td width="70px"><h3>USD - $</h3></td>
                     <td><input type="text" name="usd" id="usd1" data-theme="b"></td>
                 </tr>
                 <tr>
@@ -82,11 +79,9 @@
                     <td colspan="2"><input type="reset" name="Reset" value="Clear all" class="btn"></td>
                 </tr>
             </table>
-            <br>
-            <br>
         </form>
     </div>
-    <div class="footerbar" data-theme="b">
+    <div data-role="footer" class="footerbar" data-theme="b">
         <h3>DFT 3013 Web Design Technologies</h3>
     </div>
 </div>
@@ -104,22 +99,35 @@
     </div>
     <div data-role="content" role="main" class="dcontent">
         <h3>BRITISH POUND STERLING CONVERTER</h3>
-        <br>
         <form name="Sterling">
-            <h4>Malaysia Ringgit</h4>
-            <input type="text" name="myr" id="myr2" data-theme="b">
-            <br>
-            <input type="button" name="mybr" value="Calculate" onClick="myrgbp()" class="ui-btn" data-theme="b">
-            <br>
-            <h4>British Pound Sterling</h4>
-            <input type="text" name="gbp" id="gbp1" data-theme="b">
-            <br>
-            <input type="button" name="brmy" value="Calculate" onClick="gbpmyr()" class="ui-btn" data-theme="b">
-            <br>
-            <input type="reset" name="Reset" value="Clear all" class="btn">
+            <table>
+                <tr>
+                    <td colspan="2"><h4>Malaysia Ringgit</h4></td>
+                </tr>
+                <tr>
+                    <td width="70px"><h3>RM</h3></td>
+                    <td><input type="text" name="myr" id="myr2" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="mybr" value="Calculate" onClick="myrgbp()" class="ui-btn" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h4>British Pound Sterling</h4></td>
+                </tr>
+                <tr>
+                    <td width="70px"><h3>GBP - ₤</h3></td>
+                    <td><input type="text" name="gbp" id="gbp1" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="brmy" value="Calculate" onClick="gbpmyr()" class="ui-btn" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" name="Reset" value="Clear all" class="btn"></td>
+                </tr>
+            </table>
         </form>
     </div>
-    <div class="footerbar" data-theme="b">
+    <div data-role="footer" class="footerbar" data-theme="b">
         <h3>DFT 3013 Web Design Technologies</h3>
     </div>
 </div>
@@ -137,22 +145,35 @@
     </div>
     <div data-role="content" role="main" class="dcontent">
         <h3>SAUDI RIYAL CONVERTER</h3>
-        <br>
         <form name="Riyal">
-            <h4>Malaysia Ringgit</h4>
-            <input type="text" name="myr" id="myr3" data-theme="b">
-            <br>
-            <input type="button" name="mysr" value="Calculate" onClick="myrsar()" class="ui-btn" data-theme="b">
-            <br>
-            <h4>Saudi Riyal</h4>
-            <input type="text" name="sar" id="sar1" data-theme="b">
-            <br>
-            <input type="button" name="srmy" value="Calculate" onClick="sarmyr()" class="ui-btn" data-theme="b">
-            <br>
-            <input type="reset" name="Reset" value="Clear all" class="btn">
+            <table>
+                <tr>
+                    <td colspan="2"><h4>Malaysia Ringgit</h4></td>
+                </tr>
+                <tr>
+                    <td width="70px"><h3>RM</h3></td>
+                    <td><input type="text" name="myr" id="myr3" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="mysr" value="Calculate" onClick="myrsar()" class="ui-btn" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h4>Saudi Riyal</h4></td>
+                </tr>
+                <tr>
+                    <td width="70px"><h3>SAR - ﷼</h3></td>
+                    <td><input type="text" name="sar" id="sar1" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="srmy" value="Calculate" onClick="sarmyr()" class="ui-btn" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" name="Reset" value="Clear all" class="btn"></td>
+                </tr>
+            </table>
         </form>
     </div>
-    <div class="footerbar" data-theme="b">
+    <div data-role="footer" class="footerbar" data-theme="b">
         <h3>DFT 3013 Web Design Technologies</h3>
     </div>
 </div>
@@ -170,22 +191,35 @@
     </div>
     <div data-role="content" role="main" class="dcontent" >
         <h3>JAPANESE YEN CONVERTER</h3>
-        <br>
         <form name="Yen" data-theme="b">
-            <h4>Malaysia Ringgit</h4>
-            <input type="text" name="myr" id="myr4" data-theme="b">
-            <br>
-            <input type="button" name="myjp" value="Calculate" onClick="myrjpy()" class="ui-btn" data-theme="b">
-            <br>
-            <h4>Japanese Yen</h4>
-            <input type="text" name="jpy" id="jpy1" data-theme="b">
-            <br>
-            <input type="button" name="jpmy" value="Calculate" onClick="jpymyr()" class="ui-btn" data-theme="b">
-            <br>
-            <input type="reset" name="Reset" value="Clear all" class="btn">
+            <table>
+                <tr>
+                    <td colspan="2"><h4>Malaysia Ringgit</h4></td>
+                </tr>
+                <tr>
+                    <td width="70px"><h3>RM</h3></td>
+                    <td><input type="text" name="myr" id="myr4" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="myjp" value="Calculate" onClick="myrjpy()" class="ui-btn" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h4>Japanese Yen</h4></td>
+                </tr>
+                <tr>
+                    <td width="70px"><h3>YEN - ¥</h3></td>
+                    <td><input type="text" name="jpy" id="jpy1" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="jpmy" value="Calculate" onClick="jpymyr()" class="ui-btn" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" name="Reset" value="Clear all" class="btn"></td>
+                </tr>
+            </table>
         </form>
     </div>
-    <div class="footerbar" data-theme="b">
+    <div data-role="footer" class="footerbar" data-theme="b">
         <h3>DFT 3013 Web Design Technologies</h3>
     </div>
 </div>
@@ -244,7 +278,7 @@
             </ol>
         </div>
     </div>
-    <div class="footerbar" data-theme="b">
+    <div data-role="footer" class="footerbar" data-theme="b">
         <h3>DFT 3013 Web Design Technologies</h3>
     </div>
 </div>
