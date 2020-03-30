@@ -1,230 +1,252 @@
 <!doctype html>
 <html>
 <head>
-
-<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi">
+<link rel="apple-touch-icon-precomposed" href="css/images/icons-png/money.png">
 <title>Web Project</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/calculate.js"></script>
-    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/calculate.js"></script>
+<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-    
-    <!------------------------------------------------------------------Home-------------------------------------------------------->
-    <div data-role="page" id="Homepage" data-theme="a">
-        <div data-role="navbar" class="navibar">
-            <ul>
-                <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
-                <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="ui-header" data-theme="b">
-            <h2>Home</h2>
-        </div>
-        
-        <div data-role="content" role="main" class="ui-content">
-            <h3>Welcome to Currency Converter</h3>
-            <ul data-role="listview">
-                <li><a href="#USDolarpage" data-transition="slideup">US Dolar</a></li>
-                <li><a href="#Britishpspage" data-transition="slideup">BRITISH POUND STERLING</a></li>
-                <li><a href="#SaudiRiyalpage" data-transition="slideup">SAUDI RIYAL</a></li>
-                <li><a href="#JapaneseYenpage" data-transition="slideup">JAPANESE YEN</a></li>
-            </ul>
-        </div>
-            <div data-role="footer" class="footerbar" data-theme="b">
-            <h3>DFT 3013 Web Design Technologies</h3>
-        </div>
+
+<!------------------------------------------------------------------Home-------------------------------------------------------->
+<div data-role="page" id="Homepage" data-theme="a">
+    <div data-role="navbar" class="navibar">
+        <ul>
+            <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
+            <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
+        </ul>
     </div>
-    
-    <!------------------------------------------------------------------US dollar-------------------------------------------------------->
-    <div data-role="page" id="USDolarpage" data-theme="a">
-        <div data-role="navbar" class="navibar">
-            <ul>
-                <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
-                <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
-            <h2>Home</h2>
-        </div>
-        
-        <div data-role="content" role="main" class="ui-content">
-            <h3>US DOLLAR CONVERTER</h3>
+    <div data-role="header" class="ui-header" data-theme="b">
+        <h2>Home</h2>
+    </div>
+    <div data-role="content" role="main" class="dcontent">
+        <h3>Welcome to Currency Converter</h3>
+        <table id="menu">
+            <tr>
+                <td width="50%"><a href="#USDolarpage" data-transition="slideup">US Dolar</a></td>
+                <td width="50%"><a href="#Britishpspage" data-transition="slideup">BRITISH POUND STERLING</a></td>
+            </tr>
+            <tr>
+                <td width="50%"><a href="#SaudiRiyalpage" data-transition="slideup">SAUDI RIYAL</a></td>
+                <td width="50%"><a href="#JapaneseYenpage" data-transition="slideup">JAPANESE YEN</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="footerbar" data-theme="b">
+        <h3>DFT 3013 Web Design Technologies</h3>
+    </div>
+</div>
+
+<!------------------------------------------------------------------US dollar-------------------------------------------------------->
+<div data-role="page" id="USDolarpage" data-theme="a">
+    <div data-role="navbar" class="navibar">
+        <ul>
+            <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
+            <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+        <h2>Home</h2>
+    </div>
+    <div data-role="content" role="main" class="dcontent">
+        <h3>US DOLLAR CONVERTER</h3>
+        <br>
+        <form name="Dolar">
+            <table>
+                <tr>
+                    <td colspan="2"><h4>MALAYSIA RINGGIT</h4></td>
+                </tr>
+                <tr>
+                    <td width="30px"><p>RM</p></td>
+                    <td><input type="text" name="myr" id="myr1" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="myus" value="Calculate" onClick="myrusd()" class="btn"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h4>US DOLLAR</h4></td>
+                </tr>
+                <tr>
+                    <td width="30px"><p>USD</p></td>
+                    <td><input type="text" name="usd" id="usd1" data-theme="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" name="usmy" value="Calculate" onClick="usdmyr()" class="btn"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" name="Reset" value="Clear all" class="btn"></td>
+                </tr>
+            </table>
             <br>
-            <form name="Dolar">
-                <h4>MALAYSIA RINGGIT</h4>
-                RM <input type="text" name="myr" id="myr1" data-theme="b">
-                <br>
-                <input type="button" name="myus" value="Calculate" onClick="myrusd()" class="btn">
-                <br>
-                <h4>US DOLLAR</h4>
-                <input type="text" name="usd" id="usd1" data-theme="b">
-                <br>
-                <input type="button" name="usmy" value="Calculate" onClick="usdmyr()" class="btn">
-                <br>
-                <input type="reset" name="Reset" value="Clear all" class="btn">
-            </form>
-        </div>
-            <div data-role="footer" class="footerbar" data-theme="b">
-            <h3>DFT 3013 Web Design Technologies</h3>
-        </div>
-    </div>
-    
-    <!------------------------------------------------------------------British Pound Sterling-------------------------------------------------------->
-    <div data-role="page" id="Britishpspage" data-theme="a">
-        <div data-role="navbar" class="navibar">
-            <ul>
-                <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
-                <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
-            <h2>Home</h2>
-        </div>
-        
-        <div data-role="content" role="main" class="ui-content">
-            <h3>BRITISH POUND STERLING CONVERTER</h3>
             <br>
-            <form name="Sterling">
-                <h4>Malaysia Ringgit</h4>
-                <input type="text" name="myr" id="myr2" data-theme="b">
-                <br>
-                <input type="button" name="mybr" value="Calculate" onClick="myrgbp()" class="ui-btn" data-theme="b">
-                <br>
-                <h4>British Pound Sterling</h4>
-                <input type="text" name="gbp" id="gbp1" data-theme="b">
-                <br>
-                <input type="button" name="brmy" value="Calculate" onClick="gbpmyr()" class="ui-btn" data-theme="b">
-                <br>
-                <input type="reset" name="Reset" value="Clear all" class="btn">
-            </form>
-        </div>
-            <div data-role="footer" class="footerbar" data-theme="b">
-            <h3>DFT 3013 Web Design Technologies</h3>
-        </div>
+        </form>
     </div>
-    
-    <!------------------------------------------------------------------Saudi Riyal-------------------------------------------------------->
-    <div data-role="page" id="SaudiRiyalpage" data-theme="a">
-        <div data-role="navbar" class="navibar">
-            <ul>
-                <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
-                <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
-            <h2>Home</h2>
-        </div>
-        
-        <div data-role="content" role="main" class="ui-content">
-            <h3>SAUDI RIYAL CONVERTER</h3>
+    <div class="footerbar" data-theme="b">
+        <h3>DFT 3013 Web Design Technologies</h3>
+    </div>
+</div>
+
+<!------------------------------------------------------------------British Pound Sterling-------------------------------------------------------->
+<div data-role="page" id="Britishpspage" data-theme="a">
+    <div data-role="navbar" class="navibar">
+        <ul>
+            <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
+            <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+        <h2>Home</h2>
+    </div>
+    <div data-role="content" role="main" class="dcontent">
+        <h3>BRITISH POUND STERLING CONVERTER</h3>
+        <br>
+        <form name="Sterling">
+            <h4>Malaysia Ringgit</h4>
+            <input type="text" name="myr" id="myr2" data-theme="b">
             <br>
-            <form name="Riyal">
-                <h4>Malaysia Ringgit</h4>
-                <input type="text" name="myr" id="myr3" data-theme="b">
-                <br>
-                <input type="button" name="mysr" value="Calculate" onClick="myrsar()" class="ui-btn" data-theme="b">
-                <br>
-                <h4>Saudi Riyal</h4>
-                <input type="text" name="sar" id="sar1" data-theme="b">
-                <br>
-                <input type="button" name="srmy" value="Calculate" onClick="sarmyr()" class="ui-btn" data-theme="b">
-                <br>
-                <input type="reset" name="Reset" value="Clear all" class="btn">
-            </form>
-        </div>
-            <div data-role="footer" class="footerbar" data-theme="b">
-            <h3>DFT 3013 Web Design Technologies</h3>
-        </div>
-    </div>
-    
-    <!------------------------------------------------------------------Japanese Yen-------------------------------------------------------->
-    <div data-role="page" id="JapaneseYenpage" data-theme="a">
-        <div data-role="navbar" class="navibar">
-            <ul>
-                <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
-                <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
-            <h2>Home</h2>
-        </div>
-        
-        <div data-role="content" role="main" class="ui-content" >
-            <h3>JAPANESE YEN CONVERTER</h3>
+            <input type="button" name="mybr" value="Calculate" onClick="myrgbp()" class="ui-btn" data-theme="b">
             <br>
-            <form name="Yen" data-theme="b">
-                <h4>Malaysia Ringgit</h4>
-                <input type="text" name="myr" id="myr4" data-theme="b">
-                <br>
-                <input type="button" name="myjp" value="Calculate" onClick="myrjpy()" class="ui-btn" data-theme="b">
-                <br>
-                <h4>Japanese Yen</h4>
-                <input type="text" name="jpy" id="jpy1" data-theme="b">
-                <br>
-                <input type="button" name="jpmy" value="Calculate" onClick="jpymyr()" class="ui-btn" data-theme="b">
-                <br>
-                <input type="reset" name="Reset" value="Clear all" class="btn">
-            </form>
-        </div>
-            <div data-role="footer" class="footerbar" data-theme="b">
-            <h3>DFT 3013 Web Design Technologies</h3>
-        </div>
+            <h4>British Pound Sterling</h4>
+            <input type="text" name="gbp" id="gbp1" data-theme="b">
+            <br>
+            <input type="button" name="brmy" value="Calculate" onClick="gbpmyr()" class="ui-btn" data-theme="b">
+            <br>
+            <input type="reset" name="Reset" value="Clear all" class="btn">
+        </form>
     </div>
-    
-    <!------------------------------------------------------------------Home-------------------------------------------------------->
-    <div data-role="page" id="Contactpage" data-theme="a">
-        <div data-role="navbar" class="navibar">
-            <ul>
-                <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
-                <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
-            </ul>
-        </div>
-        <div data-role="header" class="ui-header" data-theme="b">
-            <h2>Contact</h2>
-        </div>
-        
-        <div data-role="content" role="main" class="ui-content">
-            <h3>Group Members</h3>
-            <div id="members">
+    <div class="footerbar" data-theme="b">
+        <h3>DFT 3013 Web Design Technologies</h3>
+    </div>
+</div>
+
+<!------------------------------------------------------------------Saudi Riyal-------------------------------------------------------->
+<div data-role="page" id="SaudiRiyalpage" data-theme="a">
+    <div data-role="navbar" class="navibar">
+        <ul>
+            <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
+            <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+        <h2>Home</h2>
+    </div>
+    <div data-role="content" role="main" class="dcontent">
+        <h3>SAUDI RIYAL CONVERTER</h3>
+        <br>
+        <form name="Riyal">
+            <h4>Malaysia Ringgit</h4>
+            <input type="text" name="myr" id="myr3" data-theme="b">
+            <br>
+            <input type="button" name="mysr" value="Calculate" onClick="myrsar()" class="ui-btn" data-theme="b">
+            <br>
+            <h4>Saudi Riyal</h4>
+            <input type="text" name="sar" id="sar1" data-theme="b">
+            <br>
+            <input type="button" name="srmy" value="Calculate" onClick="sarmyr()" class="ui-btn" data-theme="b">
+            <br>
+            <input type="reset" name="Reset" value="Clear all" class="btn">
+        </form>
+    </div>
+    <div class="footerbar" data-theme="b">
+        <h3>DFT 3013 Web Design Technologies</h3>
+    </div>
+</div>
+
+<!------------------------------------------------------------------Japanese Yen-------------------------------------------------------->
+<div data-role="page" id="JapaneseYenpage" data-theme="a">
+    <div data-role="navbar" class="navibar">
+        <ul>
+            <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
+            <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="ui-header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+        <h2>Home</h2>
+    </div>
+    <div data-role="content" role="main" class="dcontent" >
+        <h3>JAPANESE YEN CONVERTER</h3>
+        <br>
+        <form name="Yen" data-theme="b">
+            <h4>Malaysia Ringgit</h4>
+            <input type="text" name="myr" id="myr4" data-theme="b">
+            <br>
+            <input type="button" name="myjp" value="Calculate" onClick="myrjpy()" class="ui-btn" data-theme="b">
+            <br>
+            <h4>Japanese Yen</h4>
+            <input type="text" name="jpy" id="jpy1" data-theme="b">
+            <br>
+            <input type="button" name="jpmy" value="Calculate" onClick="jpymyr()" class="ui-btn" data-theme="b">
+            <br>
+            <input type="reset" name="Reset" value="Clear all" class="btn">
+        </form>
+    </div>
+    <div class="footerbar" data-theme="b">
+        <h3>DFT 3013 Web Design Technologies</h3>
+    </div>
+</div>
+
+<!------------------------------------------------------------------Home-------------------------------------------------------->
+<div data-role="page" id="Contactpage" data-theme="a">
+    <div data-role="navbar" class="navibar">
+        <ul>
+            <li><a href="#Homepage" data-icon="home" data-transition="slidedown">HOME</a></li>
+            <li><a href="#Contactpage" data-icon="gear" data-transition="slideup">CONTACT</a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="ui-header" data-theme="b">
+        <h2>Contact</h2>
+    </div>
+    <div data-role="content" role="main" class="dcontent">
+        <h3>Group Members</h3>
+        <div id="members">
             <ol>
                 <li>
                     <p>Muhammad Hafiz Shahman Bin Mohd Nor Hisham</p>
                     <ul>
-                        <li>19DDT18F2070</li>
+                        <li>
+                            <p>19DDT18F2070</p>
+                        </li>
                         <li><a href="https://www.instagram.com/hfzshahman/?hl=en"><img src="css/images/icons-png/instagram.png" alt="icon" class="icon">hfzshahman</a></li>
                     </ul>
                 </li>
                 <li>
                     <p>Nik Iddin Murtadha Bin Nik Mat</p>
                     <ul>
-                        <li>19DDT18F2071</li>
+                        <li>
+                            <p>19DDT18F2071</p>
+                        </li>
                         <li><a href="https://www.instagram.com/nikiddinggg/?hl=en"><img src="css/images/icons-png/instagram.png" alt="icon" class="icon">nikiddinggg</a></li>
                     </ul>
                 </li>
                 <li>
                     <p>Muhammad Zairul Haqimi bin Kamalruddin</p>
                     <ul>
-                        <li>19DDT18F2069</li>
+                        <li>
+                            <p>19DDT18F2069</p>
+                        </li>
                         <li><a href="https://www.instagram.com/zairullhaqimi/?hl=en"><img src="css/images/icons-png/instagram.png" alt="icon" class="icon">zairullhaqimi</a></li>
                     </ul>
                 </li>
                 <li>
                     <p>Muhamad Nazmi Bin Aduka</p>
                     <ul>
-                        <li>19DDT18F2047</li>
+                        <li>
+                            <p>19DDT18F2047</p>
+                        </li>
                         <li><a href="https://www.instagram.com/namyaduka/?hl=en"><img src="css/images/icons-png/instagram.png" alt="icon" class="icon">namyaduka</a></li>
                     </ul>
                 </li>
             </ol>
-            </div>
-        </div>
-            <div data-role="footer" class="footerbar" data-theme="b">
-            <h3>DFT 3013 Web Design Technologies</h3>
         </div>
     </div>
+    <div class="footerbar" data-theme="b">
+        <h3>DFT 3013 Web Design Technologies</h3>
+    </div>
+</div>
 </body>
 </html>
