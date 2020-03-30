@@ -1,19 +1,20 @@
-[data-role=page] {
-    height: 100%;
-    position: relative;
-}
-[data-role=footer] {
+.footerbar {
     bottom: 0;
     position: absolute;
     top: auto;
+    height: 50px;
     width: 100%;
+    border: 2px black;
 }
-.ui-content {
+.dcontent, .list, .footerbar{
     background-image: url("images/money.jpg");
 }
 .icon {
     width: 15px;
     padding: 0px 2px;
+}
+h1,h2,h3,h4,h5,p {
+    color: white;
 }
 #members li {
     list-style-type: hiragana;
@@ -22,19 +23,15 @@
     list-style-type: hiragana;
 }
 #members li ul li a {
-    text-decoration: none;
     color: black;
 }
 .img-center {
     display: block;
     margin: 0 auto;
 }
-table.center {
-    margin-left: auto;
-    margin-right: auto;
+table{
+    width: 100%;
+    text-align: center
+        
 }
-table #table1 {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
+
