@@ -10,9 +10,16 @@
     background-size: cover ;
     background-repeat: no-repeat;
 }
-.icon {
+.contacticon {
     width: 15px;
     padding: 0px 2px;
+}
+.menuicon {
+    width: 50px;
+    object-position: center;
+}
+.icon {
+    width: 50px;
 }
 h1, h2, h3, h4, h5 {
     text-shadow: 2px 1px 5px red; 
